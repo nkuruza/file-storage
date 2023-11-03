@@ -1,0 +1,13 @@
+package za.co.asandasystems.filestorage.exception;
+
+public class StorageException extends RuntimeException {
+	private static final long serialVersionUID = 3045537773698224740L;
+
+	public StorageException(String message) {
+		super(message);
+	}
+
+	public StorageException(String message, Throwable cause) {
+		super(message, cause);
+	}
+}
