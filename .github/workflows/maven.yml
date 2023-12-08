@@ -31,5 +31,5 @@ jobs:
       run: mvn -B package --file pom.xml
       #run: mvn --batch-mode deploy
       env:
-        GITHUB_TOKEN: ${{ secrets.CSM_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
