@@ -44,16 +44,16 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<executions>
-	                <execution>
-	                    <id>repackage</id>
-	                    <goals>
-	                        <goal>repackage</goal>
-	                    </goals>
-	                    <configuration>
-	                        <classifier>exec</classifier>
-	                    </configuration>
-	                </execution>
-	            </executions>
+					<execution>
+						<id>repackage</id>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+						<configuration>
+							<classifier>exec</classifier>
+						</configuration>
+					</execution>
+				</executions>
 				<configuration>
 					<excludes>
 						<exclude>
@@ -65,5 +65,11 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/nkuruza/file-storage</url>
+		</repository>
+	</distributionManagement>
 </project>
